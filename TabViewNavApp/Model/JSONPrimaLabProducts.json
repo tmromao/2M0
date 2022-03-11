@@ -1,0 +1,36 @@
+[
+    {
+        "id" : 1,
+        "title" : "Primalab xpto-A",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-primalab-A",
+        "efficacy" : "Primalab A.."
+    },
+    {
+        "id" : 2,
+        "title" : "Primalab xpto-B",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-primalab-xpto-B",
+        "efficacy" : "Primalab B.."
+    },
+    {
+        "id" : 3,
+        "title" : "Primalab xpto-C",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-primalab-xpto-C",
+        "efficacy" : "Primalab C.."
+    },
+    {
+        "id" : 4,
+        "title" : "Primalab xpto-D",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-primalab-xpto-D",
+        "efficacy" : "Primalab D..."
+    }
+
+]
+

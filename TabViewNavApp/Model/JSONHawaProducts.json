@@ -1,0 +1,19 @@
+[
+    {
+        "id" : 1,
+        "title" : "hawa acid cell",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-hawa",
+        "efficacy" : "Alcanizador.."
+    },
+    {
+        "id" : 2,
+        "title" : "hawa biotic",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-hawa-biotic",
+        "efficacy" : "hawa biotic.."
+    }
+
+]

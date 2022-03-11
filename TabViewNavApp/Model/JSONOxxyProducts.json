@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "title" : "Oxxy xpto-A",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-oxxy-A",
+        "efficacy" : "Oxxy A.."
+    },
+    {
+        "id" : 2,
+        "title" : "Oxxy xpto-B",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-oxxy-xpto-B",
+        "efficacy" : "Oxxy B.."
+    },
+    {
+        "id" : 3,
+        "title" : "Oxxy xpto-C",
+        "subTitle" : "headline",
+        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "recommendation" : "descricao-oxxy-xpto-C",
+        "efficacy" : "Oxxy C.."
+    }
+
+]
