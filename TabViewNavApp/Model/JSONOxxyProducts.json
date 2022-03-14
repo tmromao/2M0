@@ -3,25 +3,12 @@
         "id" : 1,
         "title" : "Oxxy xpto-A",
         "subTitle" : "headline",
-        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "imageWTitle" : "App_2M_Imagens-17-hawa-pharma-logo",
+        "imageDetail": "App_2M_Imagens-25-hawa-acidCell-titulo-logo",
         "recommendation" : "descricao-oxxy-A",
-        "efficacy" : "Oxxy A.."
-    },
-    {
-        "id" : 2,
-        "title" : "Oxxy xpto-B",
-        "subTitle" : "headline",
-        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
-        "recommendation" : "descricao-oxxy-xpto-B",
-        "efficacy" : "Oxxy B.."
-    },
-    {
-        "id" : 3,
-        "title" : "Oxxy xpto-C",
-        "subTitle" : "headline",
-        "image" : "App_2M_Imagens-17-hawa-pharma-logo",
-        "recommendation" : "descricao-oxxy-xpto-C",
-        "efficacy" : "Oxxy C.."
+        "quantity" : "16.9g",
+        "ingredients" : "Magnésio,....",
+        "intake" : "1 cápsula duas vezes por dia, fora das refeições. Não deve ser excedida a toma diária recomendada.",
+        "advertences" : "Não se aconselha a toma deste produto durante a gravidez ou aleitamento. Não recomendado em caso de hipersensibilidade"
     }
-
 ]

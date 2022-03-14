@@ -33,7 +33,7 @@ struct HomeDetailFirstView: View {
                 }
             label: {
                 HStack {
-                    Image(brand.image)
+                    Image(brand.imageWTitle)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                     

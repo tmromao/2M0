@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1303ABF02754C79200E4DE1E /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1303ABEF2754C79200E4DE1E /* ProductModel.swift */; };
-		1311D02E2754EA8B001410D0 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D02D2754EA8B001410D0 /* BrandModel.swift */; };
+		13064B0027DFB579005F89F6 /* JSONHawaProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 132447FA27DBE16C0098D007 /* JSONHawaProducts.json */; };
+		13064B0127DFC950005F89F6 /* JSONOxxyProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 132447FE27DBF2920098D007 /* JSONOxxyProducts.json */; };
+		13064B0227DFC9B2005F89F6 /* JSONPrimaLabProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */; };
 		1311D0302754EABF001410D0 /* BrandsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D02F2754EABF001410D0 /* BrandsData.swift */; };
-		132447FB27DBE16C0098D007 /* JSONHawaProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 132447FA27DBE16C0098D007 /* JSONHawaProducts.json */; };
 		132447FD27DBE4740098D007 /* JSONProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132447FC27DBE4740098D007 /* JSONProduct.swift */; };
-		132447FF27DBF2920098D007 /* JSONOxxyProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 132447FE27DBF2920098D007 /* JSONOxxyProducts.json */; };
-		1324480127DBF5D10098D007 /* JSONPrimaLabProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */; };
 		134532FD275968B60024E353 /* ProductsDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134532FC275968B60024E353 /* ProductsDataList.swift */; };
 		13586AB927D6988400115AB9 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13586AB827D6988400115AB9 /* CodableBundleExtension.swift */; };
+		135D1BD527DFAFB00072B561 /* brands.json in Resources */ = {isa = PBXBuildFile; fileRef = 13586AB427D6968B00115AB9 /* brands.json */; };
 		13EDD1DC27DB6EFE00F5F800 /* JSONBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */; };
-		13F83D8927DB98CB00F49BD2 /* brands.json in Resources */ = {isa = PBXBuildFile; fileRef = 13586AB427D6968B00115AB9 /* brands.json */; };
 		13F889C6273B34A800972206 /* TabViewNavAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C5273B34A800972206 /* TabViewNavAppApp.swift */; };
 		13F889C8273B34A800972206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C7273B34A800972206 /* ContentView.swift */; };
 		13F889CA273B34A900972206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F889C9273B34A900972206 /* Assets.xcassets */; };
@@ -35,8 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1303ABEF2754C79200E4DE1E /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
-		1311D02D2754EA8B001410D0 /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
 		1311D02F2754EABF001410D0 /* BrandsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsData.swift; sourceTree = "<group>"; };
 		132447FA27DBE16C0098D007 /* JSONHawaProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONHawaProducts.json; sourceTree = "<group>"; };
 		132447FC27DBE4740098D007 /* JSONProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProduct.swift; sourceTree = "<group>"; };
@@ -104,7 +100,6 @@
 		13586AB727D6984000115AB9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				13586AB427D6968B00115AB9 /* brands.json */,
 				13586AB827D6988400115AB9 /* CodableBundleExtension.swift */,
 			);
 			path = Extension;
@@ -167,11 +162,10 @@
 			children = (
 				13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */,
 				132447FC27DBE4740098D007 /* JSONProduct.swift */,
+				13586AB427D6968B00115AB9 /* brands.json */,
 				132447FA27DBE16C0098D007 /* JSONHawaProducts.json */,
 				1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */,
 				132447FE27DBF2920098D007 /* JSONOxxyProducts.json */,
-				1303ABEF2754C79200E4DE1E /* ProductModel.swift */,
-				1311D02D2754EA8B001410D0 /* BrandModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,10 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132447FF27DBF2920098D007 /* JSONOxxyProducts.json in Resources */,
-				13F83D8927DB98CB00F49BD2 /* brands.json in Resources */,
-				132447FB27DBE16C0098D007 /* JSONHawaProducts.json in Resources */,
-				1324480127DBF5D10098D007 /* JSONPrimaLabProducts.json in Resources */,
+				13064B0227DFC9B2005F89F6 /* JSONPrimaLabProducts.json in Resources */,
+				13064B0127DFC950005F89F6 /* JSONOxxyProducts.json in Resources */,
+				13064B0027DFB579005F89F6 /* JSONHawaProducts.json in Resources */,
+				135D1BD527DFAFB00072B561 /* brands.json in Resources */,
 				13F889CD273B34A900972206 /* Preview Assets.xcassets in Resources */,
 				13F889CA273B34A900972206 /* Assets.xcassets in Resources */,
 			);
@@ -272,9 +266,7 @@
 				13FD2030274FB739004C4309 /* HomeThirdView.swift in Sources */,
 				13FD202C274F9CC4004C4309 /* HomeDetailThirdView.swift in Sources */,
 				13FE6EB627543FB2001131A7 /* SettingsRowView.swift in Sources */,
-				1303ABF02754C79200E4DE1E /* ProductModel.swift in Sources */,
 				13F889C6273B34A800972206 /* TabViewNavAppApp.swift in Sources */,
-				1311D02E2754EA8B001410D0 /* BrandModel.swift in Sources */,
 				13FE6EB427543C97001131A7 /* SettingsLabelView.swift in Sources */,
 				13FD2032274FB7CE004C4309 /* HomeFirstTabView.swift in Sources */,
 				13EDD1DC27DB6EFE00F5F800 /* JSONBrand.swift in Sources */,

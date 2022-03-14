@@ -29,26 +29,19 @@ struct HomeDetailSecondView: View {
                         NavigationLink(destination: /*EmptyView()*/
                                        HomeDetailThirdView(title: productItem.title,
                                                            subTitle: productItem.subTitle,
-                                                           image: productItem.image)) {
-                            Text(productItem.title)
-                            Image(productItem.image)
+                                                           imageWTitle: productItem.imageWTitle,
+                                                           imageDetail: productItem.imageDetail,
+                                                           recommendation: productItem.recommendation,
+                                                           quantity: productItem.quantity,
+                                                           ingredients: productItem.ingredients,
+                                                           intake: productItem.intake,
+                                                           advertences: productItem.advertences)) {
+//                            Text(productItem.title)
+                            Image(productItem.imageWTitle)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                         }//NAVIGATIONLINL
                     }//LIST
-                    
-//                    List(hawaProductsData) { productItem in
-//                        NavigationLink(destination: /*EmptyView()*/
-//                                       HomeDetailThirdView(title: productItem.title,
-//                                                           subTitle: productItem.subTitle,
-//                                                           image: productItem.image)) {
-//                            Text(productItem.title)
-//                            Image(productItem.image)
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fit)
-//                        }//NAVIGATIONLINL
-//                    }//LIST
-                    
                 }//VSTACK
                 .navigationTitle("Produtos Hawa")
                 
@@ -56,9 +49,16 @@ struct HomeDetailSecondView: View {
             case 2:
                 VStack {
                     //                    Text("Resultou 2 - Lista de produtos Oxxy")
-              
                     ForEach(JsonOxxyProducts) { productItem in
-                        NavigationLink(destination: /*EmptyView()*/ HomeDetailThirdView(title: productItem.title, subTitle: productItem.subTitle, image: productItem.image)) {
+                        NavigationLink(destination: HomeDetailThirdView(title: productItem.title,
+                                                                        subTitle: productItem.subTitle,
+                                                                        imageWTitle: productItem.imageWTitle,
+                                                                        imageDetail: productItem.imageDetail,
+                                                                        recommendation:productItem.recommendation,
+                                                                        quantity:productItem.quantity,
+                                                                        ingredients:productItem.ingredients,
+                                                                        intake:productItem.intake,
+                                                                        advertences:productItem.advertences)) {
                             Text(productItem.title).font(.title)
                         }//NAVIGATIONLINK
                     }//LIST
@@ -77,17 +77,20 @@ struct HomeDetailSecondView: View {
                     Text ("Resultou 3 - Lista de produtos Prima lab")
                     
                     ForEach(JsonPrimaLabProducts) { productItem in
-                        NavigationLink(destination: /*EmptyView()*/ HomeDetailThirdView(title: productItem.title, subTitle: productItem.subTitle, image: productItem.image)) {
+                        NavigationLink(destination: /*EmptyView()*/ HomeDetailThirdView(title: productItem.title,
+                                                                    subTitle: productItem.subTitle, imageWTitle: productItem.imageWTitle,
+                                                                imageDetail: productItem.imageDetail,
+                                                                recommendation: productItem.recommendation,
+                                                                quantity:productItem.quantity,
+                                                                ingredients:productItem.ingredients,
+                                                                intake: productItem.intake,
+                                                                advertences:productItem.advertences)) {
                             Text(productItem.title)
                         }//NAVIGATIONLINK
                     }//LIST
                     
                     
-//                    List(primaLabProductsData) { productItem in
-//                        NavigationLink(destination: /*EmptyView()*/ HomeDetailThirdView(title: productItem.title, subTitle: productItem.subTitle, image: productItem.image)) {
-//                            Text(productItem.title)
-//                        }//NAVIGATIONLINK
-//                    }//LIST
+
                     
                 }
             default:
@@ -95,21 +98,7 @@ struct HomeDetailSecondView: View {
                 
             }
             
-            
-            
-            //            NavigationLink {
-            //                HomeDetailThirdView()
-            //            } label : {
-            //
-            //                VStack {
-            //                    Text("\(index)")
-            //                }
-            //
-            //            }
-            //        .navigationTitle("HomeDetailSecondView")
-            
         }//VSTACK
-        
         
     }
 }

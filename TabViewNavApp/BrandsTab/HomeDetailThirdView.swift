@@ -10,10 +10,15 @@ import SwiftUI
 struct HomeDetailThirdView: View {
    
     // MARK : - PROPERTIES
-    
     var title : String
     var subTitle : String
-    var image : String
+    var imageWTitle : String
+    var imageDetail : String
+    let recommendation : String
+    let quantity : String
+    let ingredients : String
+    let intake : String
+    let advertences : String
     
     @Environment(\.rootPresentationMode) var rootPresentationMode
     
@@ -23,36 +28,50 @@ struct HomeDetailThirdView: View {
         // MARK : - BODY
         VStack {
             
-            Image(image)
+            Image(imageDetail)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             
+            Spacer()
             Text(title)
-            Text(subTitle)
+//            Text(subTitle)
+//            Text(recommendation)
+//            Text(quantity)
+//            Text(ingredients)
+//            Text(intake)
+//            Text(advertences)
             
         }
-        
-//        NavigationLink {
-//
-//            HomeThirdView()
-//        }
-//        label: {
-//            Button(action: {
-//
-//                rootPresentationMode.wrappedValue.dismiss()
-//
-//            }, label: {
-//                Text("one step back")
-//            })
-//        }
-//      .navigationTitle("HomeDetailThirdView")
-//
-        
+                
     }
 }
 
 struct HomeDetailThirdView_Previews: PreviewProvider {
+    
+    //Loading JSON static data
+    static let JSONHawaProducts : [JSONProduct] = Bundle.main.decode("JSONHawaProducts.json")
+    
     static var previews: some View {
-        HomeDetailThirdView(title : "Teste", subTitle : "Teste", image: "")
+        HomeDetailThirdView(title : JSONHawaProducts[0].title,
+                            subTitle: JSONHawaProducts[0].subTitle ,
+                            imageWTitle: JSONHawaProducts[0].imageWTitle,
+                            imageDetail: JSONHawaProducts[0].imageDetail,
+                            recommendation: JSONHawaProducts[0].recommendation,
+                            quantity: JSONHawaProducts[0].quantity,
+                            ingredients: JSONHawaProducts[0].ingredients,
+                            intake: JSONHawaProducts[0].intake,
+                            advertences: JSONHawaProducts[0].advertences
+        )
+        
+//        HomeDetailThirdView(title : "Teste",
+//                            subTitle: "" ,
+//                            imageWTitle: "",
+//                            imageDetail: "",
+//                            recommendation: "",
+//                            quantity: "",
+//                            ingredients: "",
+//                            intake: "",
+//                            advertences: ""
+//        )
     }
 }

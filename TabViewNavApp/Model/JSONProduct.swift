@@ -11,7 +11,11 @@ struct JSONProduct: Codable, Identifiable {
     let id: Int
     let title : String
     let subTitle: String
-    let image: String
+    let imageWTitle: String
+    let imageDetail: String
     let recommendation : String
-    let efficacy : String
+    let quantity : String
+    let ingredients : String
+    let intake : String
+    let advertences : String
 }
