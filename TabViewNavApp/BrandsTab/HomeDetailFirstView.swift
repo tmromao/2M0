@@ -18,64 +18,54 @@ struct HomeDetailFirstView: View {
     //BODY
     var body: some View {
         
-        VStack {
-            Image("2m-logo-131x131px")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .mask(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                .frame(width: 100, height: 100, alignment: .center)
+        ZStack {
             
-            ForEach(jsonBrands) { brand in
-               
-                NavigationLink(tag: brand.id, selection: $stateManager.selectedProductIndex){
-                    HomeDetailSecondView(index: brand.id)
-                }
-            label: {
-                HStack {
-                    Image(brand.imageWTitle)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                    //Text("\(brand.title)").font(.largeTitle)
-                }//HStack
-            }//LABEL
-            }// LIST
+            VStack(spacing:0) {
+                HeaderView()
+                
+                VStack(spacing:0) {
+                    ForEach(jsonBrands) { brand in
+                       
+                        NavigationLink(tag: brand.id, selection: $stateManager.selectedProductIndex){
+                            HomeDetailSecondView(index: brand.id)
+                        }
+                        label: {
+                            HStack {
+                                Image(brand.imageWTitle)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                
+                                //Text("\(brand.title)").font(.largeTitle)
+                            }//HStack
+                        }//LABEL
+                        .navigationBarHidden(true)
+                    }// LIST
+                    //.clipShape(RoundedRectangle(cornerRadius: 12))
+                }//VSTACK
+                //.frame(maxWidth:.infinity, maxHeight:.infinity, alignment: .top)
+                Spacer(minLength: 0)
+            }
             
-            /*---SUBTITUTE
-            List(BrandsDataModel.brandsData, id:\.self) { brand in
-               
-                NavigationLink(tag: brand.id, selection: $stateManager.selectedProductIndex){
-                    HomeDetailSecondView(index: brand.id)
-                }
-            label: {
-                HStack {
-                    Image(brand.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                    //Text("\(brand.title)").font(.largeTitle)
-                }//HStack
-            }//LABEL
-            }// LIST
-             EOD OF SUBSTITUITON----*/
-            
-        }// VSTACK
-        //        VStack{
-        //            List(1...20, id:\.self){ item in
-        //
-        //                NavigationLink(tag: item, selection: $stateManager.selectedProductIndex){
-        //
-        //                    HomeDetailSecondView(index: item)
-        //                } label: {
-        //
-        //                    Text("Produto : \(item)")
-        //                }
-        //
-        //            }//LIST
-        //        }//VStack
-    }
+        }
+        //.edgesIgnoringSafeArea(.all)
+        Spacer(minLength: 0)
+    }//
     
+    // MARK : HEADER VIEW
+    @ViewBuilder
+    func HeaderView() -> some View {
+    
+        ZStack {
+            Image("2m-logo-131x131px")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .mask(Circle())
+                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
+                    .frame(maxWidth: .infinity, maxHeight: 100, alignment: .top)
+                .padding(10)
+        }//ZSTACK
+            
+    }//HeaderView
     
 }
 

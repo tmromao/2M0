@@ -25,6 +25,7 @@ struct HomeThirdView: View {
             }
             
             Spacer()
+            
             VStack(spacing:5) {
                 VStack {
                     Text("Fale connosco")
@@ -32,9 +33,11 @@ struct HomeThirdView: View {
                     Text("""
 EDIFÍCIO 2M PHARMA,\nRua Quinta do Bom Retiro, \n9A 2820-690 \nCharneca de Caparica Portugal
 """)
+                    
+                    Text("mapa")
+                    MapView()
                     Text("(+351) 211 384 961")
                     Text("info@2mpharma.pt")
-                    Text("mapa")
                     Text("Redes Sociais")
                 }
             }

@@ -35,6 +35,7 @@ struct ContentView: View {
     // MARK:- View 1
     var body: some View {
         
+        VStack(spacing:0){
 //        if (UIDevice.current.userInterfaceIdiom == .phone) {
             
             TabView( selection: $stateManager.selectedTabByDefault ) {
@@ -42,6 +43,7 @@ struct ContentView: View {
                 //MARK 1 --- TABITEM 0 (Home)
                 NavigationView { HomeFirstTabView()
                 }
+                
                 .tabItem{
                     Label("Home", systemImage: "house.fill")
                 }
@@ -81,7 +83,8 @@ struct ContentView: View {
 //                }//LIST
 //            }//Navigation view
 //        }//ELSE --
-        
+        }//VSTACK
+   
     }
     
 }
@@ -94,12 +97,14 @@ struct ContentView_Previews: PreviewProvider {
             
                 .preferredColorScheme(.light)
                 .previewDevice("iPhone 13")
+                .navigationBarHidden(true)
             
             ContentView()
                 .previewInterfaceOrientation(.portrait)
                 .previewDevice("iPhone 13")
                 .environmentObject(StateManager())
                 .preferredColorScheme(.dark)
+                .navigationBarHidden(true)
             
             
 //            ContentView()

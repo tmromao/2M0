@@ -22,5 +22,29 @@
         "ingredients" : "Óxido de magnésio; Cápsula (gelatina); Ácido málico; Ácido cítrico; Agente de volume (maltodextrina de milho).",
         "intake" : "1 cápsula duas vezes por dia, fora das refeições. Não deve ser excedida a toma diária recomendada.",
         "advertences" : "Não se aconselha a toma deste produto durante a gravidez ou aleitamento. Não recomendado em caso de hipersensibilidade ou alergia a qualquer um dos constituintes da formulação. Os suplementos alimentares não são substitutos de um regime alimentar variado e equilibrado, nem de um modo de vida saudável. O produto deve ser guardado fora do alcance e da vista das crianças. Conservar em local fresco e seco ao abrigo da luz."
+        },
+    {
+        "id" : 3,
+        "title" : "hawa aging",
+        "subTitle" : "Neutralização de acidez celular.\nNormaliza a respiração celular e o ciclo de produção de energia na mitocôndria.",
+        "imageWTitle" : "App_2M_Imagens-26-hawaAging-titulo-logo",
+        "imageDetail": "App_2M_Imagens-07-hawa-aging-Detail",
+        "recommendation" : "descricao-hawa-aging",
+        "quantity" : "16.9g",
+        "ingredients" : "Óxido de magnésio; Cápsula (gelatina); Ácido málico; Ácido cítrico; Agente de volume (maltodextrina de milho).",
+        "intake" : "1 cápsula duas vezes por dia, fora das refeições. Não deve ser excedida a toma diária recomendada.",
+        "advertences" : "Não se aconselha a toma deste produto durante a gravidez ou aleitamento. Não recomendado em caso de hipersensibilidade ou alergia a qualquer um dos constituintes da formulação. Os suplementos alimentares não são substitutos de um regime alimentar variado e equilibrado, nem de um modo de vida saudável. O produto deve ser guardado fora do alcance e da vista das crianças. Conservar em local fresco e seco ao abrigo da luz."
+        },
+    {
+        "id" : 4,
+        "title" : "hawa aging",
+        "subTitle" : "Neutralização de acidez celular.\nNormaliza a respiração celular e o ciclo de produção de energia na mitocôndria.",
+        "imageWTitle" : "App_2M_Imagens-26-hawaAging-titulo-logo",
+        "imageDetail": "App_2M_Imagens-07-hawa-aging-Detail",
+        "recommendation" : "descricao-hawa-aging",
+        "quantity" : "16.9g",
+        "ingredients" : "Óxido de magnésio; Cápsula (gelatina); Ácido málico; Ácido cítrico; Agente de volume (maltodextrina de milho).",
+        "intake" : "1 cápsula duas vezes por dia, fora das refeições. Não deve ser excedida a toma diária recomendada.",
+        "advertences" : "Não se aconselha a toma deste produto durante a gravidez ou aleitamento. Não recomendado em caso de hipersensibilidade ou alergia a qualquer um dos constituintes da formulação. Os suplementos alimentares não são substitutos de um regime alimentar variado e equilibrado, nem de um modo de vida saudável. O produto deve ser guardado fora do alcance e da vista das crianças. Conservar em local fresco e seco ao abrigo da luz."
         }
 ]

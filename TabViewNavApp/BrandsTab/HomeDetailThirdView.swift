@@ -24,25 +24,60 @@ struct HomeDetailThirdView: View {
     
     var body: some View {
 
-       
         // MARK : - BODY
-        VStack {
-            
-            Image(imageDetail)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            
-            Spacer()
-            Text(title)
-//            Text(subTitle)
-//            Text(recommendation)
-//            Text(quantity)
-//            Text(ingredients)
-//            Text(intake)
-//            Text(advertences)
-            
-        }
+        ScrollView {
+            VStack {
                 
+                // PRODUCT IMAGE
+                Image(imageDetail)
+                    .resizable()
+                    .frame(height:180)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    //.aspectRatio(contentMode: .fit)
+                
+                //Spacer()
+                VStack(alignment: .leading, spacing: 8) {
+                    
+                    //TÍTULO
+                    Text(title)
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 8)
+                        .foregroundColor(.black)
+                    
+                    //SUB TÍTULO
+                    Text(subTitle)
+                        .font(.headline)
+                        .padding(.horizontal, 8)
+                    
+                    //RECOMENDAÇÃO
+                    Text(recommendation)
+                        .padding(.vertical, 8)
+                
+                    //QUANTIDADE
+                    Text(quantity)
+                        .padding(.vertical, 8)
+                    
+                    //INGREDIENTES
+                    Text(ingredients)
+                        .padding(.vertical, 8)
+                        .multilineTextAlignment(.leading)
+                    
+                    //INTAKE
+                    Text(intake)
+                        .padding(.vertical, 8)
+                    
+                    // ADVERTENCES
+                    Text(advertences)
+                        .padding(.vertical, 8)
+                        .multilineTextAlignment(.leading)
+
+                }// END OF INNER VSTACK
+                
+            }
+        }//END OF OUTER VSTACK
+        Spacer(minLength: 0)
     }
 }
 
@@ -63,15 +98,5 @@ struct HomeDetailThirdView_Previews: PreviewProvider {
                             advertences: JSONHawaProducts[0].advertences
         )
         
-//        HomeDetailThirdView(title : "Teste",
-//                            subTitle: "" ,
-//                            imageWTitle: "",
-//                            imageDetail: "",
-//                            recommendation: "",
-//                            quantity: "",
-//                            ingredients: "",
-//                            intake: "",
-//                            advertences: ""
-//        )
     }
 }
