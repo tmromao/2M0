@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeDetailThirdView: View {
-   
+    
     // MARK : - PROPERTIES
     var title : String
     var subTitle : String
@@ -23,61 +23,87 @@ struct HomeDetailThirdView: View {
     @Environment(\.rootPresentationMode) var rootPresentationMode
     
     var body: some View {
-
+        
         // MARK : - BODY
         ScrollView {
-            VStack {
+            VStack(alignment: .leading, spacing: 0) {
                 
                 // PRODUCT IMAGE
                 Image(imageDetail)
                     .resizable()
                     .frame(height:180)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
-                    //.aspectRatio(contentMode: .fit)
+                //.aspectRatio(contentMode: .fit)
                 
-                //Spacer()
-                VStack(alignment: .leading, spacing: 8) {
-                    
+                VStack(alignment: .leading){
                     //TÍTULO
                     Text(title)
-                        .font(.largeTitle)
+                        .font(.title)
                         .fontWeight(.heavy)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 8)
+                        .padding(.leading,8)
+                        .padding(.bottom,0)
                         .foregroundColor(.black)
                     
                     //SUB TÍTULO
                     Text(subTitle)
-                        .font(.headline)
-                        .padding(.horizontal, 8)
-                    
-                    //RECOMENDAÇÃO
-                    Text(recommendation)
-                        .padding(.vertical, 8)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.top,0)
+                        .padding(.leading,8)
+                        .padding(.bottom,4)
+                }
+                //RECOMENDAÇÃO
+                Text("Recomendações \n\(recommendation).")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.leading,8)
+                    .padding(.bottom,4)
                 
-                    //QUANTIDADE
-                    Text(quantity)
-                        .padding(.vertical, 8)
-                    
-                    //INGREDIENTES
-                    Text(ingredients)
-                        .padding(.vertical, 8)
-                        .multilineTextAlignment(.leading)
-                    
-                    //INTAKE
-                    Text(intake)
-                        .padding(.vertical, 8)
-                    
-                    // ADVERTENCES
-                    Text(advertences)
-                        .padding(.vertical, 8)
-                        .multilineTextAlignment(.leading)
-
-                }// END OF INNER VSTACK
+                //QUANTIDADE
+                Text("Quantidade líquida por embalagem : \(quantity)")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.leading,8)
+                    .padding(.bottom,4)
                 
-            }
-        }//END OF OUTER VSTACK
-        Spacer(minLength: 0)
+                //INGREDIENTES
+                Text("Composição por 2 cápsulas")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.leading,8)
+                    .padding(.bottom, 4)
+                
+                Text("Ingredientes")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.leading,8)
+                
+                Text(ingredients)
+                    .font(.headline)
+                    .fontWeight(.regular)
+                    .padding(.leading, 8)
+                    //.multilineTextAlignment(.leading)
+                
+                //INTAKE
+                Text("Modo de tomar")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.leading,8)
+                
+                Text("intake")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .padding(.leading, 8)
+                
+                // ADVERTENCES
+                Text("Advertências\n\(advertences)")
+                    .font(.caption)
+                    .padding(.leading, 8)
+                    .multilineTextAlignment(.leading)
+                
+            }//END OF OUTER VSTACK
+            Spacer(minLength: 0)
+        }
     }
 }
 
