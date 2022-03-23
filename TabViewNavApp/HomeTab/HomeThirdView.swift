@@ -20,7 +20,7 @@ struct HomeThirdView: View {
                 Image("2m-logo-131x131px")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .background(Color.gray)
+                    .background(Color.green)
                     .mask(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 1))
                     .frame(width: 100, height: 100, alignment: .center)
@@ -37,6 +37,7 @@ struct HomeThirdView: View {
                         Text("Teremos todo o gosto em ajudá-lo\na esclarecer qualquer dúvida ou questão.")
                             .font(.title2)
                             .fontWeight(.semibold)
+                            
                             .padding(.leading,8)
                         
                         Text("EDIFÍCIO 2M PHARMA")
@@ -54,8 +55,14 @@ struct HomeThirdView: View {
                         
                         Text("(+351) 211 384 961")
                         Text("info@2mpharma.pt")
+                        
+                        //MARK - MAPS
                         MapView()
-                        Text("Redes Sociais")
+                        
+                        //MARK - SOCIAL Networks
+                        SocialNetworksLogosView()
+                                            
+                        
                     }
                 }
                 

@@ -18,6 +18,7 @@
 		13894A8327E0E920000DDE3D /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13894A8227E0E920000DDE3D /* InsetMapView.swift */; };
 		13894A8527E0FBBA000DDE3D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13894A8427E0FBBA000DDE3D /* MapView.swift */; };
 		13894A8727E0FC8D000DDE3D /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13894A8627E0FC8D000DDE3D /* ExternalWeblinkView.swift */; };
+		1394B36F27EBC2B300C08168 /* SocialNetworksLogosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */; };
 		13EDD1DC27DB6EFE00F5F800 /* JSONBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */; };
 		13F889C6273B34A800972206 /* TabViewNavAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C5273B34A800972206 /* TabViewNavAppApp.swift */; };
 		13F889C8273B34A800972206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C7273B34A800972206 /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 		13894A8227E0E920000DDE3D /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		13894A8427E0FBBA000DDE3D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		13894A8627E0FC8D000DDE3D /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
+		1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworksLogosView.swift; sourceTree = "<group>"; };
 		13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONBrand.swift; sourceTree = "<group>"; };
 		13F889C2273B34A800972206 /* TabViewNavApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewNavApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F889C5273B34A800972206 /* TabViewNavAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewNavAppApp.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				13894A8227E0E920000DDE3D /* InsetMapView.swift */,
 				13894A8427E0FBBA000DDE3D /* MapView.swift */,
 				13894A8627E0FC8D000DDE3D /* ExternalWeblinkView.swift */,
+				1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				13FD202A274F9A5C004C4309 /* HomeDetailSecondView.swift in Sources */,
 				13F8A458273EF94A00C4B982 /* StateManager.swift in Sources */,
+				1394B36F27EBC2B300C08168 /* SocialNetworksLogosView.swift in Sources */,
 				13FBB1FC274AD96200A2F306 /* HomeSecondView.swift in Sources */,
 				13FD2034274FFF43004C4309 /* HomeDetailFirstView.swift in Sources */,
 				134532FD275968B60024E353 /* ProductsDataList.swift in Sources */,

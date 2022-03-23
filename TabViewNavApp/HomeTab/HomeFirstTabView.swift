@@ -15,16 +15,20 @@ struct HomeFirstTabView: View {
     // MARK: - BODY
     var body: some View {
         
-        VStack(spacing: 5) {
+        VStack {
             
             // 2MPHARMA : HEADER
             ZStack {
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: .infinity, height: 100, alignment: .center)
+                
                 Image("2m-logo-131x131px")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .mask(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 1))
                     .frame(width: 100, height: 100, alignment: .center)
+                
             }
             Spacer()
             // 2MPHARMA : BODY
