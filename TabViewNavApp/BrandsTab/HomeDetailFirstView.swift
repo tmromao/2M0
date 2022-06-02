@@ -21,7 +21,9 @@ struct HomeDetailFirstView: View {
         ZStack {
             
             VStack(spacing:0) {
-                HeaderView()
+                
+                // MARK :- HEADERVIEW
+                Header2MLogoView()
                 
                 VStack(spacing:0) {
                     ForEach(jsonBrands) { brand in
@@ -51,21 +53,7 @@ struct HomeDetailFirstView: View {
         Spacer(minLength: 0)
     }//
     
-    // MARK : HEADER VIEW
-    @ViewBuilder
-    func HeaderView() -> some View {
-    
-        ZStack {
-            Image("2m-logo-131x131px")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .mask(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                    .frame(maxWidth: .infinity, maxHeight: 100, alignment: .top)
-                .padding(10)
-        }//ZSTACK
-            
-    }//HeaderView
+
     
 }
 

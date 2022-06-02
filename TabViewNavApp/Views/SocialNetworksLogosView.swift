@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SocialNetworksLogosView: View {
     var body: some View {
-        HStack(spacing:20) {
+        HStack(spacing:40) {
             
             // INSTAGRAM
             
@@ -43,9 +43,8 @@ struct SocialNetworksLogosView: View {
             }
             
         }
+        .frame(maxWidth: .infinity, maxHeight: 50)
         .padding()
-        
-        
     }
 }
 

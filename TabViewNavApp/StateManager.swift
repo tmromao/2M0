@@ -9,7 +9,7 @@ import Foundation
 
 class StateManager: ObservableObject {
     
-    @Published var selectedTabByDefault = 1
+    @Published var selectedTabByDefault = 0
     
     @Published var selectedProductIndex: Int?
     
@@ -17,7 +17,7 @@ class StateManager: ObservableObject {
     
     @Published var isNavBarHidden: Bool = true
     
-    @Published var selectedTab : Int? = 1
+    @Published var selectedTab : Int? = 0
     
     
 }

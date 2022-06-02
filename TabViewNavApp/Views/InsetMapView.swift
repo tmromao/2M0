@@ -13,7 +13,7 @@ struct InsetMapView: View {
     // MARK :- PROPERTIES
     
     //
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 38.64388, longitude: 9.18644), span: MKCoordinateSpan(latitudeDelta: 0.8, longitudeDelta: 0.8))
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 38.643890, longitude: -9.18644), span: MKCoordinateSpan(latitudeDelta: 0.008, longitudeDelta: 0.008))
     
     
     // MARK :- BODY
@@ -39,7 +39,7 @@ struct InsetMapView: View {
                             .cornerRadius(8)
                     )
                 } // NAVIGATION
-                    .padding(12)
+                    .padding()
                 , alignment: .topTrailing
                 )
             .frame(height: 256)

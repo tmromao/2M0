@@ -19,7 +19,7 @@ import Foundation
 //]
 
 // MARK -- Hawa JSON Data
-let JsonHawaProducts : [JSONProduct] = Bundle.main.decode("JSONHawaProducts.json")
+let JsonHawaProducts : [JSONProduct] = Bundle.main.decode("JSONHawaProducts_final_05-05-2022.json")
 
 
 // MARK:- Oxxy products data
@@ -31,7 +31,7 @@ let JsonHawaProducts : [JSONProduct] = Bundle.main.decode("JSONHawaProducts.json
 
 
 //MARK -- Oxxy JSON Data
-let JsonOxxyProducts : [JSONProduct] = Bundle.main.decode("JSONOxxyProducts.json")
+let JsonOxxyProducts : [JSONProduct] = Bundle.main.decode("JSONOxxyProducts_final_05-05-2022.json")
 
 // MARK:- PRIMALAB products data
 

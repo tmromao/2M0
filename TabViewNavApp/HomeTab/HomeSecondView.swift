@@ -19,14 +19,9 @@ struct HomeSecondView: View {
         
         VStack(spacing:5) {
             
-            ZStack {
-                Image("2m-logo-131x131px")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .mask(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                    .frame(width: 100, height: 100, alignment: .center)
-            }
+          //MARK - Header 2M Logo View
+            Header2MLogoView()
+            
             VStack(content:{
                 Text("Missão")
                     .font(.title)
@@ -51,8 +46,6 @@ struct HomeSecondView: View {
                 
             })
                 .padding()
-            
-           
             
             // MARK :- FORMAçÃO
             VStack(content:  {

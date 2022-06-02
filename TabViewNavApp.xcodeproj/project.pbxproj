@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13064B0027DFB579005F89F6 /* JSONHawaProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 132447FA27DBE16C0098D007 /* JSONHawaProducts.json */; };
 		13064B0127DFC950005F89F6 /* JSONOxxyProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 132447FE27DBF2920098D007 /* JSONOxxyProducts.json */; };
 		13064B0227DFC9B2005F89F6 /* JSONPrimaLabProducts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */; };
 		1311D0302754EABF001410D0 /* BrandsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311D02F2754EABF001410D0 /* BrandsData.swift */; };
 		132447FD27DBE4740098D007 /* JSONProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132447FC27DBE4740098D007 /* JSONProduct.swift */; };
+		13287DB327FF4FE700BFE03C /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13287DB227FF4FE700BFE03C /* VideoPlayerView.swift */; };
+		13287DB627FF534400BFE03C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13287DB527FF534400BFE03C /* Helper.swift */; };
+		133891D82800B5E600FE8B8D /* 2mpharma.md in Resources */ = {isa = PBXBuildFile; fileRef = 133891D72800B5E600FE8B8D /* 2mpharma.md */; };
 		134532FD275968B60024E353 /* ProductsDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134532FC275968B60024E353 /* ProductsDataList.swift */; };
 		13586AB927D6988400115AB9 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13586AB827D6988400115AB9 /* CodableBundleExtension.swift */; };
+		135CDC5D27EE490700FD4A0E /* Header2MLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135CDC5C27EE490700FD4A0E /* Header2MLogoView.swift */; };
 		135D1BD527DFAFB00072B561 /* brands.json in Resources */ = {isa = PBXBuildFile; fileRef = 13586AB427D6968B00115AB9 /* brands.json */; };
 		13894A8327E0E920000DDE3D /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13894A8227E0E920000DDE3D /* InsetMapView.swift */; };
 		13894A8527E0FBBA000DDE3D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13894A8427E0FBBA000DDE3D /* MapView.swift */; };
 		13894A8727E0FC8D000DDE3D /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13894A8627E0FC8D000DDE3D /* ExternalWeblinkView.swift */; };
+		138CC6EA28264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 138CC6E928264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json */; };
+		138CC6EC28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 138CC6EB28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json */; };
+		138CC6EE28264B62004A52D8 /* 2mpharma.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 138CC6ED2826494A004A52D8 /* 2mpharma.mp4 */; };
 		1394B36F27EBC2B300C08168 /* SocialNetworksLogosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */; };
 		13EDD1DC27DB6EFE00F5F800 /* JSONBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */; };
 		13F889C6273B34A800972206 /* TabViewNavAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C5273B34A800972206 /* TabViewNavAppApp.swift */; };
@@ -38,16 +44,22 @@
 
 /* Begin PBXFileReference section */
 		1311D02F2754EABF001410D0 /* BrandsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsData.swift; sourceTree = "<group>"; };
-		132447FA27DBE16C0098D007 /* JSONHawaProducts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONHawaProducts.json; sourceTree = "<group>"; };
 		132447FC27DBE4740098D007 /* JSONProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProduct.swift; sourceTree = "<group>"; };
 		132447FE27DBF2920098D007 /* JSONOxxyProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JSONOxxyProducts.json; sourceTree = "<group>"; };
 		1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JSONPrimaLabProducts.json; sourceTree = "<group>"; };
+		13287DB227FF4FE700BFE03C /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		13287DB527FF534400BFE03C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		133891D72800B5E600FE8B8D /* 2mpharma.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 2mpharma.md; sourceTree = "<group>"; };
 		134532FC275968B60024E353 /* ProductsDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataList.swift; sourceTree = "<group>"; };
 		13586AB427D6968B00115AB9 /* brands.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = brands.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		13586AB827D6988400115AB9 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		135CDC5C27EE490700FD4A0E /* Header2MLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header2MLogoView.swift; sourceTree = "<group>"; };
 		13894A8227E0E920000DDE3D /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		13894A8427E0FBBA000DDE3D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		13894A8627E0FC8D000DDE3D /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
+		138CC6E928264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "JSONHawaProducts_final_05-05-2022.json"; sourceTree = "<group>"; };
+		138CC6EB28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "JSONOxxyProducts_final_05-05-2022.json"; sourceTree = "<group>"; };
+		138CC6ED2826494A004A52D8 /* 2mpharma.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2mpharma.mp4; sourceTree = "<group>"; };
 		1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworksLogosView.swift; sourceTree = "<group>"; };
 		13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONBrand.swift; sourceTree = "<group>"; };
 		13F889C2273B34A800972206 /* TabViewNavApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewNavApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +73,7 @@
 		13FD2029274F9A5C004C4309 /* HomeDetailSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailSecondView.swift; sourceTree = "<group>"; };
 		13FD202B274F9CC4004C4309 /* HomeDetailThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailThirdView.swift; sourceTree = "<group>"; };
 		13FD202F274FB739004C4309 /* HomeThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThirdView.swift; sourceTree = "<group>"; };
-		13FD2031274FB7CE004C4309 /* HomeFirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstTabView.swift; sourceTree = "<group>"; };
+		13FD2031274FB7CE004C4309 /* HomeFirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFirstTabView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		13FD2033274FFF43004C4309 /* HomeDetailFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailFirstView.swift; sourceTree = "<group>"; };
 		13FE6EB327543C97001131A7 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		13FE6EB527543FB2001131A7 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
@@ -105,6 +117,22 @@
 			path = ContactsTab;
 			sourceTree = "<group>";
 		};
+		13287DB427FF517500BFE03C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				138CC6ED2826494A004A52D8 /* 2mpharma.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		133891D62800B45800FE8B8D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13287DB527FF534400BFE03C /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		13586AB727D6984000115AB9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +160,7 @@
 		13F889C4273B34A800972206 /* TabViewNavApp */ = {
 			isa = PBXGroup;
 			children = (
+				13287DB427FF517500BFE03C /* Video */,
 				13586AB727D6984000115AB9 /* Extension */,
 				13FD202E274FAD83004C4309 /* Model */,
 				13FD202D274FAD76004C4309 /* Data */,
@@ -144,6 +173,7 @@
 				13F889C9273B34A900972206 /* Assets.xcassets */,
 				13F889CB273B34A900972206 /* Preview Content */,
 				13F8A457273EF94A00C4B982 /* StateManager.swift */,
+				133891D62800B45800FE8B8D /* Helpers */,
 			);
 			path = TabViewNavApp;
 			sourceTree = "<group>";
@@ -168,12 +198,14 @@
 		13FD202E274FAD83004C4309 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				138CC6E928264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json */,
 				13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */,
 				132447FC27DBE4740098D007 /* JSONProduct.swift */,
 				13586AB427D6968B00115AB9 /* brands.json */,
-				132447FA27DBE16C0098D007 /* JSONHawaProducts.json */,
 				1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */,
 				132447FE27DBF2920098D007 /* JSONOxxyProducts.json */,
+				138CC6EB28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json */,
+				133891D72800B5E600FE8B8D /* 2mpharma.md */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +220,8 @@
 				13894A8427E0FBBA000DDE3D /* MapView.swift */,
 				13894A8627E0FC8D000DDE3D /* ExternalWeblinkView.swift */,
 				1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */,
+				135CDC5C27EE490700FD4A0E /* Header2MLogoView.swift */,
+				13287DB227FF4FE700BFE03C /* VideoPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13064B0227DFC9B2005F89F6 /* JSONPrimaLabProducts.json in Resources */,
+				138CC6EA28264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json in Resources */,
 				13064B0127DFC950005F89F6 /* JSONOxxyProducts.json in Resources */,
-				13064B0027DFB579005F89F6 /* JSONHawaProducts.json in Resources */,
+				138CC6EE28264B62004A52D8 /* 2mpharma.mp4 in Resources */,
+				133891D82800B5E600FE8B8D /* 2mpharma.md in Resources */,
+				138CC6EC28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json in Resources */,
 				135D1BD527DFAFB00072B561 /* brands.json in Resources */,
 				13F889CD273B34A900972206 /* Preview Assets.xcassets in Resources */,
 				13F889CA273B34A900972206 /* Assets.xcassets in Resources */,
@@ -267,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13FD202A274F9A5C004C4309 /* HomeDetailSecondView.swift in Sources */,
+				135CDC5D27EE490700FD4A0E /* Header2MLogoView.swift in Sources */,
 				13F8A458273EF94A00C4B982 /* StateManager.swift in Sources */,
 				1394B36F27EBC2B300C08168 /* SocialNetworksLogosView.swift in Sources */,
 				13FBB1FC274AD96200A2F306 /* HomeSecondView.swift in Sources */,
@@ -287,6 +325,8 @@
 				13FD2032274FB7CE004C4309 /* HomeFirstTabView.swift in Sources */,
 				13EDD1DC27DB6EFE00F5F800 /* JSONBrand.swift in Sources */,
 				1311D0302754EABF001410D0 /* BrandsData.swift in Sources */,
+				13287DB327FF4FE700BFE03C /* VideoPlayerView.swift in Sources */,
+				13287DB627FF534400BFE03C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +463,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -453,6 +494,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

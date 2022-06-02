@@ -35,15 +35,16 @@ struct ContentView: View {
     // MARK:- View 1
     var body: some View {
         
-        VStack(spacing:0){
-//        if (UIDevice.current.userInterfaceIdiom == .phone) {
+     //   VStack(spacing:0){
+        if (UIDevice.current.userInterfaceIdiom == .phone) {
             
             TabView( selection: $stateManager.selectedTabByDefault ) {
                 
                 //MARK 1 --- TABITEM 0 (Home)
-                NavigationView { HomeFirstTabView()
-                }
+//                NavigationView { HomeFirstTabView() }
+//                .navigationBarHidden(stateManager.isNavBarHidden)
                 
+                HomeFirstTabView()
                 .tabItem{
                     Label("Home", systemImage: "house.fill")
                 }
@@ -51,9 +52,8 @@ struct ContentView: View {
                 
                 
                 //Mark 2 ------ Navigation view for list products
-                NavigationView { HomeDetailFirstView()
-                }
-                .navigationBarTitle(Text("Brands"),displayMode:.inline)
+                NavigationView { HomeDetailFirstView() }
+                //.navigationBarTitle(Text("Products"),displayMode:.inline)
                 .navigationBarHidden(stateManager.isNavBarHidden)
                 .environment(\.rootPresentationMode, $stateManager.selectedProductIndex)
                 .tabItem{
@@ -62,31 +62,30 @@ struct ContentView: View {
                 }
                 .tag(1)
                 
-                CreditsView()
+//                CreditsView()
+                HomeThirdView()
                     .tabItem{
                         //                Text("Page 3")
-                        Label("Credits", systemImage: "info.circle.fill")
+                        Label("+Info", systemImage: "info.circle.fill")
                         
                     }//TAB ITEM 2
                     .tag(2)
             }// TAB VIEW
-//        }// UID DEVICE PHONE
-//        else {
-//            NavigationView {
-//                List {
-//
-//                    NavigationLink("Home",
-//                                   destination: HomeFirstTabView(),
-//                                   tag:0,
-//                                   selection:$stateManager.selectedTab)
-//
-//                }//LIST
-//            }//Navigation view
-//        }//ELSE --
-        }//VSTACK
-   
+        }// UID DEVICE PHONE
+        else {
+            NavigationView {
+                List {
+
+                    NavigationLink("Home",
+                                   destination: HomeFirstTabView(),
+                                   tag:0,
+                                   selection:$stateManager.selectedTab)
+
+                }//LIST
+            }//Navigation view
+        }//ELSE --
+       // }//VSTACK
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

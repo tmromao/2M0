@@ -73,7 +73,9 @@ struct HomeDetailSecondView: View {
                             
                             //.aspectRatio(contentMode: .fit)
                     }//END OF NAVIGATION LINK
-                                            
+                    .navigationBarTitleDisplayMode(.inline)
+                    //.navigationBarHidden(true)
+
                 }//END OF FOR EACH
                 .listRowInsets(EdgeInsets(top:0, leading: 0, bottom: 0, trailing: 0))
 
@@ -102,8 +104,15 @@ struct HomeDetailSecondView: View {
                                                                 ingredients:productItem.ingredients,
                                                                 intake:productItem.intake,
                                                                 advertences:productItem.advertences)) {
-                    Text(productItem.title).font(.title)
+                    //FOR DEBUG -> Text(productItem.title).font(.title)
+                    Image(productItem.imageWTitle)
+                        .resizable()
+                        //.aspectRatio(contentMode: )
+                        .frame(height: 250)
+                    
                 }//NAVIGATIONLINK
+                .navigationBarTitleDisplayMode(.inline)
+                //.navigationBarHidden(true)
             }//END OF FOR EACH
             
         }//END OF VSTACK
@@ -129,6 +138,8 @@ struct HomeDetailSecondView: View {
                                                         advertences:productItem.advertences)) {
                     Text(productItem.title)
                 }//END OF NAVIGATIONLINK
+                .navigationBarTitleDisplayMode(.inline)
+                //.navigationBarHidden(true)
             }//END OF FOR EACH
             
         }// END OF VSTACK Primalab Products

@@ -13,69 +13,60 @@ struct HomeThirdView: View {
     
     var body: some View {
         
-        ZStack {
+        //ZStack {
             
-            VStack(spacing: 0) {
+           // VStack(spacing: 0) {
                                 
-                Image("2m-logo-131x131px")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .background(Color.green)
-                    .mask(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                    .frame(width: 100, height: 100, alignment: .center)
-                    .shadow(radius: 10)
-                
-                VStack {
-                    VStack(alignment:.leading) {
+                //TODO :- ALTERAR PARA MULTILINE
+                VStack(spacing: 0) {
+                    
+                    Header2MLogoView()
+                    
+                    VStack(alignment:.leading,spacing: 0) {
                         Text("Fale\nconnosco.")
+                            .frame(maxWidth: .infinity, minHeight: 80, alignment: .leading)
                             .font(.title)
-                            .fontWeight(.bold)
-                            .padding(.top,0)
-                            .padding(.leading,8)
-                        
-                        Text("Teremos todo o gosto em ajudá-lo\na esclarecer qualquer dúvida ou questão.")
-                            .font(.title2)
-                            .fontWeight(.semibold)
+                            .lineLimit(2)
+                            //.padding(.bottom,0)
+                            .foregroundColor(Color("2M_Color_Blue"))
                             
-                            .padding(.leading,8)
-                        
+                            
+                        Text("Teremos todo o gosto em ajudá-lo a\nesclarecer qualquer dúvida ou questão.")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .frame(maxWidth: .infinity, minHeight: 80, alignment: .leading)
+                            //.padding(.top,0)
+                
                         Text("EDIFÍCIO 2M PHARMA")
                             .font(.headline)
-                            .fontWeight(.regular)
-                            .padding(.top,2)
-                            .padding(.leading,8)
-                            .padding(.bottom,0)
+                            .fontWeight(.bold)
+                            //.padding(.top,0)
+                            //.padding(.bottom,0)
                         
                         Text("Rua Quinta do Bom Retiro, 9A\n2820-690 Charneca de Caparica\nPortugal")
                         .font(.body)
-                        .padding(.top,2)
-                        .padding(.leading,8)
-                        .padding(.bottom,2)
+                        //.padding(.top,1)
+                        //.padding(.bottom,2)
                         
-                        Text("(+351) 211 384 961")
-                        Text("info@2mpharma.pt")
+                        Link("+351211384961", destination: URL(string: "tel:211384961")!)
                         
-                        //MARK - MAPS
-                        MapView()
+                        Link("info@2mpharma.pt",
+                        destination: URL(string: "mailto:info@2mpharma.pt")!)
                         
-                        //MARK - SOCIAL Networks
-                        SocialNetworksLogosView()
-                                            
-                        
-                    }
-                }
-                
-                Button(action: {
-                    stateManager.isHomeNavActive = false
-                }, label: {
-                    Text("HomeThirdView - Click me to go back to HomeView")
+                    }//VSTACK
+                    .padding(.horizontal)
                     
-                })//BUTTON
+                    //MARK - MAP VIEW
+                    MapView()
+                        .padding()
+                        
+                    //MARK - SOCIAL Networks
+                    SocialNetworksLogosView()
+                    
+                    Spacer()
+                }// V-STACK
                 
-            }//VStack
-        }//ZStack
-    }
+        }//BODY
 }
 
 struct HomeSThirdView_Previews: PreviewProvider {
