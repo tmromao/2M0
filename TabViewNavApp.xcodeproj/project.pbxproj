@@ -198,10 +198,10 @@
 		13FD202E274FAD83004C4309 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				138CC6E928264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json */,
 				13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */,
 				132447FC27DBE4740098D007 /* JSONProduct.swift */,
 				13586AB427D6968B00115AB9 /* brands.json */,
+				138CC6E928264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json */,
 				1324480027DBF5D10098D007 /* JSONPrimaLabProducts.json */,
 				132447FE27DBF2920098D007 /* JSONOxxyProducts.json */,
 				138CC6EB28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json */,

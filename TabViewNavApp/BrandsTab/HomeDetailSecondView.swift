@@ -64,7 +64,8 @@ struct HomeDetailSecondView: View {
                                                 quantity: productItem.quantity,
                                                 ingredients: productItem.ingredients,
                                                 intake: productItem.intake,
-                                                advertences: productItem.advertences)) {
+                                                advertences: productItem.advertences,
+                                                       colorProduct: productItem.colorProduct)) {
                         Image(productItem.imageWTitle)
                             .resizable()
                             //.aspectRatio(contentMode: )
@@ -103,7 +104,8 @@ struct HomeDetailSecondView: View {
                                                                 quantity:productItem.quantity,
                                                                 ingredients:productItem.ingredients,
                                                                 intake:productItem.intake,
-                                                                advertences:productItem.advertences)) {
+                                                                advertences:productItem.advertences,
+                                                                colorProduct: productItem.colorProduct)) {
                     //FOR DEBUG -> Text(productItem.title).font(.title)
                     Image(productItem.imageWTitle)
                         .resizable()
@@ -135,7 +137,8 @@ struct HomeDetailSecondView: View {
                                                         quantity:productItem.quantity,
                                                         ingredients:productItem.ingredients,
                                                         intake: productItem.intake,
-                                                        advertences:productItem.advertences)) {
+                                                        advertences:productItem.advertences,
+                                                                colorProduct: productItem.colorProduct)) {
                     Text(productItem.title)
                 }//END OF NAVIGATIONLINK
                 .navigationBarTitleDisplayMode(.inline)

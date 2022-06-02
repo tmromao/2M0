@@ -18,4 +18,6 @@ struct JSONProduct: Codable, Identifiable {
     let ingredients : String
     let intake : String
     let advertences : String
+    let colorProduct : String
+
 }

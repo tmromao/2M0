@@ -19,6 +19,7 @@ struct HomeDetailThirdView: View {
     let ingredients : String
     let intake : String
     let advertences : String
+    let colorProduct: String
     
     @Environment(\.rootPresentationMode) var rootPresentationMode
     
@@ -27,8 +28,8 @@ struct HomeDetailThirdView: View {
         // MARK : - BODY
         ZStack {
             
-            Color.red
-                .ignoresSafeArea()
+//            Color.red
+//                .ignoresSafeArea()
             
             VStack(alignment: .leading, spacing: 0) {
                 
@@ -39,13 +40,13 @@ struct HomeDetailThirdView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 //.aspectRatio(contentMode: .fit)
                 
-                VStack(alignment: .leading){
+                VStack(spacing:0){
                     //TÍTULO
                     Text(title)
                         .font(.title)
                         .fontWeight(.heavy)
-                        .padding(.leading,8)
                         .padding(.bottom,0)
+                        .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                         .foregroundColor(.black)
                     
                     //SUB TÍTULO
@@ -53,23 +54,25 @@ struct HomeDetailThirdView: View {
                         .font(.title2)
                         .fontWeight(.bold)
                         .padding(.top,0)
-                        .padding(.leading,8)
                         .padding(.bottom,4)
+                        .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 }
+                .padding(.leading, 8)
                 //RECOMENDAÇÃO
                 Group {
                     Text("Recomendações")
                         .font(.title3)
                         .fontWeight(.semibold)
-                        .padding(.leading,8)
                     .padding(.bottom,4)
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                     
                     Text("\(recommendation).")
                         .font(.body)
                         .fontWeight(.semibold)
-                        .padding(.leading,8)
                     .padding(.bottom,4)
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 }
+                .padding(.leading, 8)
                 
                 //QUANTIDADE
                 Group {
@@ -78,8 +81,7 @@ struct HomeDetailThirdView: View {
                         .fontWeight(.semibold)
                         .padding(.leading,8)
                     .padding(.bottom,4)
-                    
-                  
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 }
                 
                 //INGREDIENTES
@@ -88,11 +90,13 @@ struct HomeDetailThirdView: View {
                     .fontWeight(.bold)
                     .padding(.leading,8)
                     .padding(.bottom, 4)
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 
                 Text("Ingredientes")
                     .font(.callout)
                     .fontWeight(.bold)
                     .padding(.leading,8)
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 
                 Text(ingredients)
                     .font(.headline)
@@ -105,6 +109,7 @@ struct HomeDetailThirdView: View {
                     .font(.body)
                     .fontWeight(.bold)
                     .padding(.leading,8)
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 
                 Text(intake)
                     .font(.callout)
@@ -116,16 +121,24 @@ struct HomeDetailThirdView: View {
                     .font(.caption2)
                     .padding(.leading, 8)
                     .multilineTextAlignment(.leading)
+                    .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 
             }//END OF OUTER VSTACK
+            
         }
+        .background(Color(colorProduct))
+        .ignoresSafeArea()
     }
+    
+    
 }
+
+// ATENCÃO AO JSON QUE ESTA A SER UTILIZADO
 
 struct HomeDetailThirdView_Previews: PreviewProvider {
     
     //Loading JSON static data
-    static let JSONHawaProducts : [JSONProduct] = Bundle.main.decode("JSONHawaProducts.json")
+    static let JSONHawaProducts : [JSONProduct] = Bundle.main.decode("JSONHawaProducts_final_05-05-2022.json")
     
     static var previews: some View {
         HomeDetailThirdView(title : JSONHawaProducts[0].title,
@@ -136,7 +149,8 @@ struct HomeDetailThirdView_Previews: PreviewProvider {
                             quantity: JSONHawaProducts[0].quantity,
                             ingredients: JSONHawaProducts[0].ingredients,
                             intake: JSONHawaProducts[0].intake,
-                            advertences: JSONHawaProducts[0].advertences
+                            advertences: JSONHawaProducts[0].advertences,
+                            colorProduct: JSONHawaProducts[0].colorProduct
         )
         
     }
