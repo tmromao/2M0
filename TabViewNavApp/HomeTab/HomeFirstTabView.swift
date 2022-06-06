@@ -24,7 +24,9 @@ struct HomeFirstTabView: View {
 //                // 2MPHARMA : BODY
 //
                 Text(" 2M Pharma é uma empresa farmacêutica nacional, empreendedora e inovadora, impulsionada pela paixão, investigação e descoberta, conquistando um notável prestígio não só a nível nacional, mas também nos mais exigentes mercados internacionais.\nCom foco na inovação e qualidade, somos especialistas no desenvolvimento, distribuição e comercialização de Dispositivos Médicos, Nutracêuticos e Cosmética para diversas áreas da saúde, com soluções de diagnóstico e terapêutica que respondem às necessidades e exigências de pacientes e profissionais de saúde.")
-                .font(.footnote)
+                .lineSpacing(4.0)
+                .font(Font.custom("Helvetica Neue", size: 16))
+                .multilineTextAlignment(.leading)
                 .padding()
 
 //                VideoPlayerView()

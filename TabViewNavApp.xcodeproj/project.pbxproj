@@ -25,6 +25,7 @@
 		138CC6EC28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json in Resources */ = {isa = PBXBuildFile; fileRef = 138CC6EB28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json */; };
 		138CC6EE28264B62004A52D8 /* 2mpharma.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 138CC6ED2826494A004A52D8 /* 2mpharma.mp4 */; };
 		1394B36F27EBC2B300C08168 /* SocialNetworksLogosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */; };
+		139D191B284E996500AB8997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139D191A284E996500AB8997 /* LaunchScreen.storyboard */; };
 		13EDD1DC27DB6EFE00F5F800 /* JSONBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */; };
 		13F889C6273B34A800972206 /* TabViewNavAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C5273B34A800972206 /* TabViewNavAppApp.swift */; };
 		13F889C8273B34A800972206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F889C7273B34A800972206 /* ContentView.swift */; };
@@ -61,6 +62,7 @@
 		138CC6EB28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "JSONOxxyProducts_final_05-05-2022.json"; sourceTree = "<group>"; };
 		138CC6ED2826494A004A52D8 /* 2mpharma.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2mpharma.mp4; sourceTree = "<group>"; };
 		1394B36E27EBC2B300C08168 /* SocialNetworksLogosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworksLogosView.swift; sourceTree = "<group>"; };
+		139D191A284E996500AB8997 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13EDD1DB27DB6EFE00F5F800 /* JSONBrand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONBrand.swift; sourceTree = "<group>"; };
 		13F889C2273B34A800972206 /* TabViewNavApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabViewNavApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F889C5273B34A800972206 /* TabViewNavAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewNavAppApp.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		13F889B9273B34A800972206 = {
 			isa = PBXGroup;
 			children = (
+				139D191A284E996500AB8997 /* LaunchScreen.storyboard */,
 				13F889C4273B34A800972206 /* TabViewNavApp */,
 				13F889C3273B34A800972206 /* Products */,
 			);
@@ -287,6 +290,7 @@
 				13064B0227DFC9B2005F89F6 /* JSONPrimaLabProducts.json in Resources */,
 				138CC6EA28264457004A52D8 /* JSONHawaProducts_final_05-05-2022.json in Resources */,
 				13064B0127DFC950005F89F6 /* JSONOxxyProducts.json in Resources */,
+				139D191B284E996500AB8997 /* LaunchScreen.storyboard in Resources */,
 				138CC6EE28264B62004A52D8 /* 2mpharma.mp4 in Resources */,
 				133891D82800B5E600FE8B8D /* 2mpharma.md in Resources */,
 				138CC6EC28264815004A52D8 /* JSONOxxyProducts_final_05-05-2022.json in Resources */,
@@ -463,6 +467,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -494,6 +499,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

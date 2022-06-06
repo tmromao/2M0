@@ -37,7 +37,7 @@ struct HomeDetailThirdView: View {
                 Image(imageDetail)
                     .resizable()
                     .frame(height:165)
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                   // .clipShape(RoundedRectangle(cornerRadius: 12))
                 //.aspectRatio(contentMode: .fit)
                 
                 VStack(spacing:0){
@@ -124,10 +124,11 @@ struct HomeDetailThirdView: View {
                     .frame(maxWidth:.infinity, minHeight: 10,alignment: .leading)
                 
             }//END OF OUTER VSTACK
-            
+            .background(Color(colorProduct))
+            .edgesIgnoringSafeArea(.vertical)
         }
-        .background(Color(colorProduct))
-        .ignoresSafeArea()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        
     }
     
     

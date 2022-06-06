@@ -47,14 +47,13 @@ struct HomeDetailSecondView: View {
         VStack(spacing:0) {
             //                        Text("Resultou 1 - Passar lista de produtos Hawa")
             //                        Text(hawaProductsData[0].title)
-            
             Image("App_2M_Imagens-17-hawa-pharma-logo")
                 .resizable()
                 .frame(height: 150)
-            
-//            List{
+
             ScrollView{
-                ForEach(JsonHawaProducts) { productItem in
+                VStack(alignment: .leading, spacing: 0){
+                    ForEach(JsonHawaProducts) { productItem in
                     NavigationLink(destination:
                                    HomeDetailThirdView(title: productItem.title,
                                                 subTitle: productItem.subTitle,
@@ -69,53 +68,54 @@ struct HomeDetailSecondView: View {
                         Image(productItem.imageWTitle)
                             .resizable()
                             //.aspectRatio(contentMode: )
-                            .frame(height: 250)
-                        
-                            
+                            .frame(maxWidth: .infinity, maxHeight: 250)
                             //.aspectRatio(contentMode: .fit)
                     }//END OF NAVIGATION LINK
                     .navigationBarTitleDisplayMode(.inline)
                     //.navigationBarHidden(true)
 
                 }//END OF FOR EACH
-                .listRowInsets(EdgeInsets(top:0, leading: 0, bottom: 0, trailing: 0))
-
+                }// END OF VSTACK
+//                .listRowInsets(EdgeInsets(top:0, leading: 0, bottom: 0, trailing: 0))
             }//END Of ScrollView
             .listStyle(SidebarListStyle())
-            
         }//END Of VSTACK
     }
     
     // MARK : VIEW OxxyProductsView
     @ViewBuilder
     func OxxyProductsView() -> some View {
-        VStack {
+        VStack(spacing:0) {
             //                    Text("Resultou 2 - Lista de produtos Oxxy")
             Image("App_2M_Imagens-18-oxxy-logo")
                 .resizable()
                 .frame(height: 150)
             
-            ForEach(JsonOxxyProducts) { productItem in
-                NavigationLink(destination: HomeDetailThirdView(title: productItem.title,
-                                                                subTitle: productItem.subTitle,
-                                                                imageWTitle: productItem.imageWTitle,
-                                                                imageDetail: productItem.imageDetail,
-                                                                recommendation:productItem.recommendation,
-                                                                quantity:productItem.quantity,
-                                                                ingredients:productItem.ingredients,
-                                                                intake:productItem.intake,
-                                                                advertences:productItem.advertences,
-                                                                colorProduct: productItem.colorProduct)) {
-                    //FOR DEBUG -> Text(productItem.title).font(.title)
-                    Image(productItem.imageWTitle)
-                        .resizable()
-                        //.aspectRatio(contentMode: )
-                        .frame(height: 250)
-                    
-                }//NAVIGATIONLINK
-                .navigationBarTitleDisplayMode(.inline)
-                //.navigationBarHidden(true)
-            }//END OF FOR EACH
+            ScrollView {
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(JsonOxxyProducts) { productItem in
+                        NavigationLink(destination: HomeDetailThirdView(title: productItem.title,
+                                                                        subTitle: productItem.subTitle,
+                                                                        imageWTitle: productItem.imageWTitle,
+                                                                        imageDetail: productItem.imageDetail,
+                                                                        recommendation:productItem.recommendation,
+                                                                        quantity:productItem.quantity,
+                                                                        ingredients:productItem.ingredients,
+                                                                        intake:productItem.intake,
+                                                                        advertences:productItem.advertences,
+                                                                        colorProduct: productItem.colorProduct)) {
+                            //FOR DEBUG -> Text(productItem.title).font(.title)
+                            Image(productItem.imageWTitle)
+                                .resizable()
+                                //.aspectRatio(contentMode: )
+                                .frame(height: 250)
+                        }//NAVIGATIONLINK
+                        .navigationBarTitleDisplayMode(.inline)
+                        //.navigationBarHidden(true)
+                    }//END OF FOR EACH
+                }
+            }
+            .listStyle(SidebarListStyle())
             
         }//END OF VSTACK
     }// END OF OxxyProductsView
@@ -123,7 +123,7 @@ struct HomeDetailSecondView: View {
     // MARK : VIEW PrimalabProductsView
     @ViewBuilder
     func PrimalabProductsView() -> some View {
-        VStack {
+        VStack(spacing:0) {
             //Text ("Resultou 3 - Lista de produtos Prima lab")
             Image("App_2M_Imagens-19-prima-logo")
                 .resizable()
